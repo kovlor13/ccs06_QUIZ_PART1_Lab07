@@ -3,7 +3,10 @@
 require "vendor/autoload.php";
 
 // 1. What does this function session_start() do to the application?
-// _____________________________________________________________________
+// Session_Start(); essentially allows the user to resume an existing session via storing a data that can be  access across multiple pages or- 
+// -request if ever needed by the said user,  as long it has the saame ID, for instance we can start a session where the program requires the user to input user name,
+// we can make the id of the name simply "username" if we are ever gonna call on this we are gonna simple type the session Id along with the Session Command.
+// in this app we used it to call the user's information such
 
 session_start();
 session_destroy();
