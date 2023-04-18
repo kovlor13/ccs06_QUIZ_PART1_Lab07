@@ -4,7 +4,9 @@ require "vendor/autoload.php";
 
 session_start();
 // 2. Why do you think the session variable assignments are wrapped inside an if-else and try-catch statements?
-// _____________________________________________________________________
+//// 2. Why do you think the session variable assignments are wrapped inside an if-else and try-catch statements?
+// The SESSION in this particular program uses the if else and try catch as a requirement for the user to input the proper format,  if the user didnt input the format that is requiured
+// the program will prompt the user to do so, due to the if else. try catch is mostly use in erro handling given the format.
 
 try {
     if (isset($_POST['fullname'])) {
